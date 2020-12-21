@@ -1,9 +1,9 @@
 import numpy as np
 
+"""
+
 def trueValue(x, N):
     return (x + N) % N
-
-
 
 def neighbors(x, y, grid):
     N = len(grid)
@@ -27,6 +27,8 @@ def gameOfLifeNaiv(grid):
             grid_out[y][x] = 0
     return grid_out
 
+"""
+
 def gameOfLife(grid):
     grid_out = np.empty_like(grid)
     N = grid.shape[0]
@@ -44,4 +46,3 @@ def gameOfLife(grid):
                 continue
             grid_out[y][x] = 0
     return grid_out
-

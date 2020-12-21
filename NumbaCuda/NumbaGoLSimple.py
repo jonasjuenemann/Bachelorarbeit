@@ -4,6 +4,8 @@ import numba
 from numba import cuda
 import numpy as np
 
+# schnelleres -> wird benutzt.
+
 np.random.seed(0)
 
 """
@@ -29,7 +31,7 @@ def gameOfLife_ker(array_out, array_in):
 
 
 if __name__ == '__main__':
-    N = 16384
+    N = 8192
     iterations = 200
     t_start = time()
     an_array = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))

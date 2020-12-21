@@ -20,8 +20,14 @@ font = {'family': 'sans-serif',
 
 # Iterations = 1;
 # N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
+PythonLists = [0.004, 0.012, 0.040, 0.178514, 0.690194, 2.959453, 10.936]
+PythonLists2 = [0.003, 0.011, 0.047, 0.197, 0.800, 3.349, 12.651]
+# warum ist das schneller als numpy -> vermutlich weil wir am Anfang kein komplettes "leeres" Array erstellen müssen.
+# Je höher N desto langsamer wird Lists im vergleich -> Ineffizientere Datenstruktur.
+PythonOptLists = [0.003, 0.017, 0.067, 0.280, 1.137, 4.56, 19.113]
 PythonNaiv = [0, 0.015, 0.093735, 0.343742, 1.343719, 5.468748, 21.796871]
 PythonOpt = [0, 0.015, 0.046874, 0.296836, 1.126185, 4.640658, 17.562500]
+PythonClass = [0.008, 0.030, 0.117, 0.46, 1.857, 6.757, 26.828]  # performance-technisch langsamer.
 # PythonParallel = [0.437467, 0.484343, 0.499969, 0.687502, 0.968747, 6.9, 26.802776]
 PythonParallel = [1.21, 1.201, 1.243, 1.18, 1.177, 1.348, 1.437]
 PythonNumbaJiT = [0.390, 0.406, 0.390, 0.437, 0.468, 0.562, 0.718]
@@ -78,6 +84,9 @@ plt.savefig("BestPython1.jpg")
 
 # Iterations = 20;
 # N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
+PythonLists = [0.046, 0.186, 0.799, 3.240, 12.468, 52.348, 213.396]
+PythonLists2 = [0.054, 0.234, 0.859, 3.404, 14.137, 58.85, 240]
+PythonOptLists = [0.029, 0.113, 0.45, 1.891, 7.913, 33.80, 130]
 PythonNaiv = [0.093, 0.421, 1.625, 7.015, 29.481, 106.79, 420]
 PythonOpt = [0.078, 0.312, 1.296, 5.343, 24.412, 88.109, 340]
 # PythonParallel = [0.765, 1.109, 1.765, 3.734, 12.562, 50.341, 555.188]
@@ -139,7 +148,7 @@ bestpy.set_ylabel("Execution time", fontdict=font)
 
 plt.savefig("Python&C20.jpg")
 
-
+# Iterations = 200;
 # N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
 PythonNaiv = [1.079, 4.319, 17.134, 71.215, 305.977, 1300, 5000]
 PythonOpt = [0.924, 3.56, 13.93, 54.94, 210, 850, 3200]

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05589b83-c342-4889-865d-ee68b47dc946" name="Default Changelist" comment="" />
+    <list default="true" id="05589b83-c342-4889-865d-ee68b47dc946" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoLBenchmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoLBenchmarks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaCudaGoL.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaCudaGoL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLSpeed.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +21,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="05a40eb6-40d1-4db4-8ca5-ace6910d3efc" />
   <component name="ProjectId" id="1jA1nN2tGvKUapvKIw2qYBTJzLu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -34,21 +48,18 @@
       <recent name="C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\NumbaCuda" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GoLBenchmarks">
-    <configuration name="GoLBenchmarks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.GoLNaiv">
+    <configuration name="GoLFunctions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PurePython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GoLBenchmarks.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PurePython/GoLFunctions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,20 +68,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GoLCython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GoLNaiv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cython" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PurePython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cython/GoLCython.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PurePython/GoLNaiv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GoLSpeed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bachelorarbeit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PurePython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PurePython/GoLSpeed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,9 +110,6 @@
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumbaCuda" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -105,9 +129,6 @@
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumbaCuda" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -145,38 +166,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Bachelorarbeit" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cython" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cython/setup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GoLBenchmarks" />
-        <item itemvalue="Python.NumbaGoLSimple" />
+        <item itemvalue="Python.GoLNaiv" />
+        <item itemvalue="Python.GoLSpeed" />
         <item itemvalue="Python.NumbaCudaGoL" />
-        <item itemvalue="Python.GoLCython" />
-        <item itemvalue="Python.setup" />
+        <item itemvalue="Python.NumbaGoLSimple" />
+        <item itemvalue="Python.GoLFunctions" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,21 +216,27 @@
       <workItem from="1604438562899" duration="52000" />
       <workItem from="1604438626001" duration="10054000" />
       <workItem from="1604490359792" duration="2809000" />
+      <workItem from="1604509243560" duration="13000" />
+      <workItem from="1605391394291" duration="10000" />
+      <workItem from="1606437138193" duration="698000" />
+      <workItem from="1608414086893" duration="1035000" />
+      <workItem from="1608475877360" duration="6593000" />
+      <workItem from="1608564535303" duration="7690000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1215" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604072044895">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1215" y="323" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1604072044895" />
-    <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1604449903697">
+    <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1606437986215">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1604449903697" />
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1606437986215" />
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604249820424" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604272961909">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -272,24 +278,24 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603238270097" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604272961909" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1604256288265">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1606437155785">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603232319310" />
+    <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1606437155785" />
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604256288265" />
     <state x="475" y="225" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1604438160509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="475" y="225" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604438160509" />
-    <state x="-1264" y="344" width="592" height="352" key="com.intellij.ide.util.TipDialog" timestamp="1604438723408">
+    <state x="-1264" y="344" width="592" height="352" key="com.intellij.ide.util.TipDialog" timestamp="1605391394244">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1264" y="344" width="592" height="352" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1604415025631" />
+    <state x="-1264" y="344" width="592" height="352" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1605391394244" />
     <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604438723408" />
-    <state x="337" y="110" width="1427" height="584" key="dock-window-1" timestamp="1604490451794">
+    <state x="154" y="0" width="1367" height="712" maximized="true" key="dock-window-1" timestamp="1608565855786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="337" y="110" width="1427" height="584" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1604490451794" />
+    <state x="154" y="0" width="1367" height="712" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1608565855786" />
     <state x="409" y="164" width="1447" height="584" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604443759107" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

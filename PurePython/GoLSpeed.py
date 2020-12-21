@@ -11,8 +11,8 @@ Y = [1024, 2048, 4096, 8192, 16384]
 
 
 if __name__ == '__main__':
-    iterations = 200
-    N = Y[2]
+    iterations = 20
+    N = X[1]
     print("started with gridsize " + str(N) + " and " + str(iterations) + " iterations")
 
     t_start = time()
@@ -21,16 +21,17 @@ if __name__ == '__main__':
     for i in range(iterations):
         #grid = gameOfLifeNaiv(grid)
         pass
+
     t_end = time()
     # timeit.Timer(gameOfLife(grid)).timeit(number=1000)
     print("end")
-    print('Total time naiv: %f' % (t_end - t_start))
+    print('Total time W/ lists: %f' % (t_end - t_start))
 
     t_start = time()
     grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
 
     for i in range(iterations):
-        #grid = gameOfLife(grid)
+        grid = gameOfLife(grid)
         pass
 
     t_end = time()
@@ -41,7 +42,8 @@ if __name__ == '__main__':
     grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
 
     for i in range(iterations):
-        grid = gameOfLifePara(grid)
+        #grid = gameOfLifePara(grid)
+        pass
 
     t_end = time()
     print("end")
@@ -51,7 +53,8 @@ if __name__ == '__main__':
     grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
 
     for i in range(iterations):
-        grid = gameOfLifeJit(grid)
+        #grid = gameOfLifeJit(grid)
+        pass
 
 
     t_end = time()
