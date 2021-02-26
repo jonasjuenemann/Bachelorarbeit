@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05589b83-c342-4889-865d-ee68b47dc946" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Bachelorarbeit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bachelorarbeit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alles1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alles20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alles200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestPython1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestPython20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestPythonVSC-Interface.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoL.cp38-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoL.cp38-win_amd64.pyd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoLComplete.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoLComplete.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoLCython.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoLCython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/build/lib.win-amd64-3.8/GoL.cp38-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/build/lib.win-amd64-3.8/GoL.cp38-win_amd64.pyd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GoLBenchmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoLBenchmarks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaCudaGoL.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaCudaGoL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLPlot.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLPlot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLSpeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python&amp;C20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonParallized/GoLMultiThreaded.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonParallized(retired)/GoLMultiThreaded.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonParallized/GoLNumexpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonParallized(retired)/GoLNumexpr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonParallized/GoLPara.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonParallized(retired)/GoLPara.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonParallized/joblib_memmap/data_memmap" beforeDir="false" afterPath="$PROJECT_DIR$/PythonParallized(retired)/joblib_memmap/data_memmap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Top200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +49,6 @@
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -279,6 +247,7 @@
       <workItem from="1614142269973" duration="6405000" />
       <workItem from="1614219248554" duration="2367000" />
       <workItem from="1614307612709" duration="617000" />
+      <workItem from="1614356708625" duration="2500000" />
     </task>
     <servers />
   </component>
@@ -286,11 +255,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1613962487784">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614356868776">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1613962487784" />
-    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613955266101" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614356868776" />
     <state x="-1459" y="162" key="SettingsEditor" timestamp="1614142325005">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

@@ -123,7 +123,34 @@ bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
 
 plt.savefig("Pybind&C++.jpg")
 
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PyCudaPC, c="red")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["PyCUDA", "Cplusplus"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 0.7])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
 
+plt.savefig("PyCUDA&C++.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PyCudaPC, c="red")
+bestpy.plot(Arraysizes, NumbaCudaPC, c="orange")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["PyCUDA", "numbaCuda", "Cplusplus"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 0.7])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("PyCUDA&numbaCUDA&C++.jpg")
 
 
 
