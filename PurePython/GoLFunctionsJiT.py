@@ -10,30 +10,10 @@ fuer Parallelisierung koennte man hier @jit(Parallel=True) hinzuefuegen, das gae
 
 
 @jit(nopython=True, nogil=True, fastmath=True)
-def gameOfLifeJit(grid):
+def gameOfLifeJiT(grid):
     grid_out = np.empty_like(grid)
     N = grid.shape[0]
     for y in range(N):
-        for x in range(N):
-            z = grid[(y - 1 + N) % N][(x + 1 + N) % N] + grid[(y - 1 + N) % N][(x + N) % N] \
-                + grid[(y - 1 + N) % N][(x - 1 + N) % N] + grid[(y + N) % N][(x + 1 + N) % N] + \
-                grid[(y + N) % N][(x - 1 + N) % N] + grid[(y + 1 + N) % N][(x + 1 + N) % N] + \
-                grid[(y + 1 + N) % N][(x + N) % N] + grid[(y + 1 + N) % N][(x - 1 + N) % N]
-            if z == 3:
-                grid_out[y][x] = 1
-                continue
-            if (grid[y][x] == 1) and (z == 2):
-                grid_out[y][x] = 1
-                continue
-            grid_out[y][x] = 0
-    return grid_out
-
-
-@jit(parallel=True)
-def gameOfLifePara(grid):
-    grid_out = np.empty_like(grid)
-    N = grid.shape[0]
-    for y in prange(N):
         for x in range(N):
             z = grid[(y - 1 + N) % N][(x + 1 + N) % N] + grid[(y - 1 + N) % N][(x + N) % N] \
                 + grid[(y - 1 + N) % N][(x - 1 + N) % N] + grid[(y + N) % N][(x + 1 + N) % N] + \

@@ -16,9 +16,7 @@ def Nachbarn(x, y, grid, N):
 def gameOfLife(grid):
     grid_out = np.zeros_like(grid)
     cdef int Size = len(grid)
-    cdef int y = 0
-    cdef int x = 0
-    cdef int z = 0
+    cdef int y, x, z = 0
     for y in range(Size):
         # print("y = " + str(y))
         for x in range(Size):
@@ -50,7 +48,7 @@ print ('Total time: %f' % (t_end - t_start))
 
 """
 it=1
-N=256d
+N=256
 Total time: 0.263074
 
 it=200

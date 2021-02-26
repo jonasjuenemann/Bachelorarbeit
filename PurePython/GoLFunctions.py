@@ -1,6 +1,6 @@
 import numpy as np
 
-"""
+
 
 def trueValue(x, N):
     return (x + N) % N
@@ -27,7 +27,7 @@ def gameOfLifeNaiv(grid):
             grid_out[y][x] = 0
     return grid_out
 
-"""
+
 
 def gameOfLife(grid):
     grid_out = np.empty_like(grid)

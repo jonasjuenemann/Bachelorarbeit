@@ -4,6 +4,8 @@ from numba import cuda
 import numpy as np
 #import sys
 
+# Hier nur Test, anderes ist schneller
+
 #np.set_printoptions(threshold=sys.maxsize)
 np.random.seed(0)
 

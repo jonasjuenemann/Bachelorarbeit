@@ -1,23 +1,26 @@
 import GoL
 import numpy as np
 from time import time
+from timeit import Timer
 
 np.random.seed(0)
-iterations = 200
-N = 512
-grid = np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N)
-print(grid)
+iterations = 20
+N = [32, 64, 128, 256, 512, 1024, 2048]
 
-t_start = time()
+def gameOfLifeTimer(func, x , N):
+    grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
+    grid = func(grid, x)
 
-grid = GoL.gameOfLife(grid, iterations)
+for i in N:
+    print("Durchführung mit Arraygröße: " + str(i))
+
+    t = Timer(lambda: gameOfLifeTimer(GoL.gameOfLife, iterations, i))
+    avgtime = t.timeit(number=1)
+
+    print("end")
+    print('Total time gameOfLife via Cython: %f' % (avgtime))
 
 
-print(grid)
-t_end = time()
-
-print("end")
-print('Total time: %f' % (t_end - t_start))
 
 """
 python 3.8.5 distri

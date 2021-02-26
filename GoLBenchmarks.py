@@ -17,20 +17,12 @@ font = {'family': 'sans-serif',
         'weight': 'normal',
         'size': 16,
         }
-
+"""
 # Iterations = 1;
 # N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
-PythonLists = [0.004, 0.012, 0.040, 0.178514, 0.690194, 2.959453, 10.936]
-PythonLists2 = [0.003, 0.011, 0.047, 0.197, 0.800, 3.349, 12.651]
-# warum ist das schneller als numpy -> vermutlich weil wir am Anfang kein komplettes "leeres" Array erstellen müssen.
-# Je höher N desto langsamer wird Lists im vergleich -> Ineffizientere Datenstruktur.
-PythonOptLists = [0.003, 0.017, 0.067, 0.280, 1.137, 4.56, 19.113]
 PythonNaiv = [0, 0.015, 0.093735, 0.343742, 1.343719, 5.468748, 21.796871]
 PythonOpt = [0, 0.015, 0.046874, 0.296836, 1.126185, 4.640658, 17.562500]
 PythonClass = [0.008, 0.030, 0.117, 0.46, 1.857, 6.757, 26.828]  # performance-technisch langsamer.
-# PythonParallel = [0.437467, 0.484343, 0.499969, 0.687502, 0.968747, 6.9, 26.802776]
-PythonParallel = [1.21, 1.201, 1.243, 1.18, 1.177, 1.348, 1.437]
-PythonNumbaJiT = [0.390, 0.406, 0.390, 0.437, 0.468, 0.562, 0.718]
 Cython = [0.003, 0.01, 0.04, 0.165, 0.72, 2.778, 10.043]
 PybindsArrays = [0, 0.003, 0.01, 0.042, 0.164, 0.67, 2.69]
 PybindsVektoren = [0.001, 0.002, 0.003, 0.014, 0.053, 0.255, 0.83]
@@ -39,6 +31,243 @@ Cplusplus = [0, 0.001, 0.002, 0.007, 0.027, 0.104, 0.415]
 CplusplusParallel = [0.001, 0.002, 0.003, 0.006, 0.026, 0.083, 0.321]
 PyCuda = [0, 0, 0, 0, 0.009, 0.033, 0.15]
 NumbaCuda = [0.671, 0.671, 0.671, 0.671, 0.718, 0.671, 0.749]
+"""
+# Iterations = 20;
+# N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
+PythonNaiv = [0.083, 0.341, 1.367, 5.853, 30.837, 102.556, 356.018]
+PythonOpt = [0.061, 0.257, 1.059, 4.358, 19.311, 83.408, 300]
+PythonNumbaJiT = [0.437, 0.437, 0.453, 0.703, 0.825, 1.438, 3.422]
+PythonNumbaJiTPC = [0.004, 0.006, 0.011, 0.033, 0.140, 0.557, 1.911]
+PythonParallel = [1.120, 1.098, 1.237, 1.326, 1.383, 1.881, 3.257]
+PythonParallelPC = [0.010, 0.012, 0.017, 0.036, 0.142, 0.437, 1.711]
+Cython = [0.028, 0.106, 0.455, 1.69, 6.93, 27.62, 121.369]
+PybindsArrays = [0.013, 0.052, 0.201, 0.83, 3.447, 13.6, 54.202]
+PybindsVektoren = [0.001, 0.006, 0.02, 0.076, 0.326, 1.25, 4.984]
+PybindsVParallel = [0.0008, 0.0098, 0.014, 0.038, 0.15, 0.434, 1.76]
+Cplusplus = [0.0005, 0.00165, 0.008, 0.03, 0.106, 0.441, 1.68]
+CplusplusParallel = [0.0005, 0.0008, 0.0021, 0.0078, 0.0405, 0.188, 0.5347]
+PyCuda = [0, 0, 0, 0, 0.016, 0.031, 0.141]
+PyCudaPC = [0.0017, 0.0018, 0.0020, 0.0029, 0.01064, 0.03632, 0.15034]
+NumbaCuda = [0.687, 0.671, 0.749, 0.749, 0.771, 0.771, 0.828]
+NumbaCudaPC = [0.016, 0.009, 0.009, 0.010, 0.021, 0.053, 0.200]
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonNaiv, c="yellowgreen", markersize=8)
+bestpy.plot(Arraysizes, PythonOpt, c="green")
+bestpy.legend(["PythonNaiv", "PythonOpt"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 370])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("JustPython.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, Cplusplus, c="blue")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["Cplusplus", "CplusplusParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 2])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("JustCpp.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonNumbaJiTPC, c="red")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.legend(["PythonNumbaJiT", "PythonNumbaParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 2])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("JustNumba.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonOpt, c="yellowgreen")
+bestpy.plot(Arraysizes, Cython, c="yellow")
+bestpy.legend(["Python", "Cython"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 120])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Cython&Python.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PybindsArrays, c="red")
+bestpy.plot(Arraysizes, PybindsVektoren, c="green")
+bestpy.plot(Arraysizes, PybindsVParallel, c="black")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["PyBindPyArrays", "PyBindVekoten", "PybindsVParallel", "CplusplusParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 40])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Pybind&C++.jpg")
+
+
+
+
+
+
+#BenchnmarksKapitel
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonNaiv, c="yellowgreen")
+bestpy.plot(Arraysizes, PythonOpt, c="green")
+bestpy.plot(Arraysizes, Cplusplus, c="blue")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["PythonKlassisch", "PythonOptimiert", "Cplusplus", "CplusplusParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 310])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Python&Cpp20.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonOpt, c="green")
+bestpy.plot(Arraysizes, PythonNumbaJiTPC, c="red")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.legend(["Python", "PythonNumba", "PythonNumbaParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 300])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Python&numba.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonNumbaJiTPC, c="red")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.plot(Arraysizes, Cplusplus, c="blue")
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.legend(["PythonNumba", "PythonNumbaParallel", "Cplusplus", "CplusplusParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 2])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Numba&C++.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonOpt, c="green")
+bestpy.plot(Arraysizes, Cython, c="yellow")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.legend(["Python", "Cython", "PythonNumbaParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 300])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Python&Cython20.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.plot(Arraysizes, PybindsVParallel, c="black")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.legend(["Cplusplus", "Pybind11", "PythonNumbaParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 3])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("Pybind&numba&C++.jpg")
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, CplusplusParallel, c="purple")
+bestpy.plot(Arraysizes, PyCudaPC, c="red")
+bestpy.plot(Arraysizes, PythonParallelPC, c="orange")
+bestpy.legend(["Cplusplus", "PyCuda", "PythonNumbaParallel"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 2])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("PyCuda&numba&C++.jpg")
+
+"""
+# Iterations = 200;
+# N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
+PythonNaiv = [1.079, 4.319, 17.134, 71.215, 305.977, 1300, 5000]
+PythonOpt = [0.924, 3.56, 13.93, 54.94, 210, 850, 3200]
+PythonParallel = [1.148, 1.283, 1.345, 1.549, 2.57, 5.927, 20.048]
+PythonParallelPC = []
+PythonNumbaJiT = [0.373, 0.395, 0.450, 0.726, 1.968, 6.778, 26.775]
+PythonNumbaJiTPC = []
+Cython = [0.534, 2.203, 7.833, 32.102, 123.689, 480, 1920]
+PybindsArrays = [0.125, 0.496, 2.198, 8.457, 34.204, 130.224, 520]
+PybindsVektoren = [0.01, 0.047, 0.182, 0.678, 3.22, 11.59, 43.483]
+PybindsVParallel = [0.006, 0.019, 0.095, 0.334, 0.92, 3.25, 14.09]
+Cplusplus = [0.004, 0.018, 0.078, 0.293, 1.132, 4.748, 19.558]
+CplusplusParallel = [0.004, 0.015, 0.041, 0.101, 0.422, 1.961, 6.331]
+PyCuda = [0.016, 0.016, 0.016, 0.016, 0.031, 0.062, 0.235]
+NumbaCuda = [0.734, 0.703, 0.734, 0.687, 0.765, 0.859, 1.203]
+fig = plt.figure(figsize=(20, 10))
+"""
+
+# Nur fuer die fixen:
+# Iterations = 20;
+Arraysizes = [1024, 2048, 4096, 8192, 16384]
+# N=1024 N=2048 N=4096 N=8192 N=16384
+PythonParallel = [0.437, 1.711, 7.691, 25.971, 103.51]
+CplusplusParallel = [0.188, 0.5347, 2.15, 8.05, 30]
+PyCuda = [0.0372, 0.142, 0.55, 2.193, 8.972]
+NumbaCuda = [0.053, 0.200, 0.733, 2.876, 11.872]
+
+fig = plt.figure(figsize=(20, 10))
+bestpy = fig.add_subplot(1, 1, 1)
+bestpy.plot(Arraysizes, PythonParallel, c="yellow")
+bestpy.plot(Arraysizes, PyCuda, c="black")
+bestpy.plot(Arraysizes, NumbaCuda, c="red")
+bestpy.plot(Arraysizes, CplusplusParallel, c="blue")
+bestpy.legend(["PythonNumbaParallel", "PyCuda", "NumbaCuda", "Cplusplus"], loc=2, prop={'size': 16})
+bestpy.axis([0, 2100, 0, 90])
+bestpy.set_xticks(Arraysizes)
+bestpy.set_xticklabels(Arraysizes, rotation=60)
+bestpy.set_title("Geschwindigkeit des GoL über 20 Iterationen", fontdict=font)
+bestpy.set_xlabel("Arraygröße", fontdict=font)
+bestpy.set_ylabel("Ausführungszeit in Sekunden", fontdict=font)
+
+plt.savefig("numbaCuda&PyCuda&C++&numbaPython.jpg")
+
+"""
 ax1 = fig.add_subplot(1, 1, 1)
 ax1.plot(Arraysizes, PythonNaiv, marker="o", c="yellow", markersize=8)
 ax1.plot(Arraysizes, PythonOpt, c="green")
@@ -82,25 +311,7 @@ bestpy.set_ylabel("Execution time", fontdict=font)
 
 plt.savefig("BestPython1.jpg")
 
-# Iterations = 20;
-# N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
-PythonLists = [0.046, 0.186, 0.799, 3.240, 12.468, 52.348, 213.396]
-PythonLists2 = [0.054, 0.234, 0.859, 3.404, 14.137, 58.85, 240]
-PythonOptLists = [0.029, 0.113, 0.45, 1.891, 7.913, 33.80, 130]
-PythonNaiv = [0.093, 0.421, 1.625, 7.015, 29.481, 106.79, 420]
-PythonOpt = [0.078, 0.312, 1.296, 5.343, 24.412, 88.109, 340]
-# PythonParallel = [0.765, 1.109, 1.765, 3.734, 12.562, 50.341, 555.188]
-PythonParallel = [1.120, 1.098, 1.237, 1.326, 1.383, 1.881, 3.257]
-PythonNumbaJiT = [0.437, 0.437, 0.453, 0.703, 0.825, 1.438, 3.422]
-Cython = [0.066, 0.261, 0.908, 3.214, 14.207, 48.58, 196.6]
-PybindsArrays = [0.013, 0.052, 0.201, 0.83, 3.447, 13.6, 54.202]
-PybindsVektoren = [0.001, 0.006, 0.02, 0.076, 0.326, 1.25, 4.984]
-PybindsVParallel = [0.001, 0.004, 0.014, 0.027, 0.18, 0.47, 1.89]
-Cplusplus = [0.001, 0.002, 0.009, 0.036, 0.139, 0.567, 2.32]
-CplusplusParallel = [0.001, 0.002, 0.006, 0.02, 0.073, 0.227, 0.862]
-PyCuda = [0, 0, 0, 0, 0.016, 0.031, 0.141]
-NumbaCuda = [0.687, 0.671, 0.749, 0.749, 0.771, 0.771, 0.828]
-fig = plt.figure(figsize=(20, 10))
+
 ax3 = fig.add_subplot(1, 1, 1)
 ax3.plot(Arraysizes, PythonNaiv, marker="o", c="yellow", markersize=8)
 ax3.plot(Arraysizes, PythonOpt, c="orange")
@@ -148,21 +359,6 @@ bestpy.set_ylabel("Execution time", fontdict=font)
 
 plt.savefig("Python&C20.jpg")
 
-# Iterations = 200;
-# N=32 N=64 N=128 N=256 N=512 N=1024 N=2048
-PythonNaiv = [1.079, 4.319, 17.134, 71.215, 305.977, 1300, 5000]
-PythonOpt = [0.924, 3.56, 13.93, 54.94, 210, 850, 3200]
-PythonParallel = [1.148, 1.283, 1.345, 1.549, 2.57, 5.927, 20.048]
-PythonNumbaJiT = [0.373, 0.395, 0.450, 0.726, 1.968, 6.778, 26.775]
-Cython = [0.534, 2.203, 7.833, 32.102, 123.689, 480, 1920]
-PybindsArrays = [0.125, 0.496, 2.198, 8.457, 34.204, 130.224, 520]
-PybindsVektoren = [0.01, 0.047, 0.182, 0.678, 3.22, 11.59, 43.483]
-PybindsVParallel = [0.006, 0.019, 0.095, 0.334, 0.92, 3.25, 14.09]
-Cplusplus = [0.004, 0.018, 0.078, 0.293, 1.132, 4.748, 19.558]
-CplusplusParallel = [0.004, 0.015, 0.041, 0.101, 0.422, 1.961, 6.331]
-PyCuda = [0.016, 0.016, 0.016, 0.016, 0.031, 0.062, 0.235]
-NumbaCuda = [0.734, 0.703, 0.734, 0.687, 0.765, 0.859, 1.203]
-fig = plt.figure(figsize=(20, 10))
 ax2 = fig.add_subplot(1, 1, 1)
 ax2.plot(Arraysizes, PythonNaiv, marker="o", c="yellow", markersize=8)
 # ax2.scatter(Arraysizes[4], PythonNaiv[4], c="yellow", marker="X", s=200)
@@ -225,19 +421,6 @@ bestpy.set_ylabel("Execution time", fontdict=font)
 
 plt.savefig("BestPythonVSC-Interface.jpg")
 
-# Iterations = 200;
-
-
-# Nur fuer die fixen:
-# Iterations = 200;
-Arraysizes = [1024, 2048, 4096, 8192, 16384]
-# N=1024 N=2048 N=4096 N=8192 N=16384
-PythonParallel = [5.927, 20.048, 81.433, 320, 1280]
-PythonNumbaJiT = [6.778, 26.775, 102.99, 410, 1640]
-PybindsVParallel = [3.25, 14.09, 53.221, 212, 840]
-CplusplusParallel = [1.961, 6.331, 20.033, 76.73, 310]
-PyCuda = [0.062, 0.235, 0.969, 3.657, 14.828]
-NumbaCuda = [0.859, 1.203, 2.968, 9.828, 37.328]
 fig = plt.figure(figsize=(20, 10))
 ax4 = fig.add_subplot(1, 1, 1)
 ax4.axis([1000, 16500, 0, 800])
@@ -258,6 +441,4 @@ ax4.set_ylabel("Execution time", fontdict=font)
 # plt.subplots_adjust(hspace=0.3, bottom=0.05, top=0.95, right=0.9, left=0.1)
 plt.savefig("Top200.jpg")
 
-"""
-Compilation time vs Runtime wurde hier jetzt nicht gemacht.
 """

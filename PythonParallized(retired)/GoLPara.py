@@ -114,7 +114,7 @@ if __name__ == '__main__':
     N = 256
     grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
     # cachedir = r"C:\Users\JonasJuenemann\AppData\Local\cache"
-    # path = r'C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\PythonParallized\joblib_memmap'
+    # path = r'C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\PythonParallized(retired)\joblib_memmap'
     """
     # fuer memmapping
     folder = './joblib_memmap'
