@@ -1,10 +1,7 @@
-import math
 from time import time
 import numba
 from numba import cuda
 import numpy as np
-
-np.random.seed(0)
 
 """Kernel zur Ausführung des GoL. Besitzt wie bei PyCUDA eine automatische Indizierung"""
 @cuda.jit
@@ -25,28 +22,37 @@ def gameOfLife_ker(array_out, array_in):
         if (array_in[y][x] == 1) and (z == 2):
             array_out[y][x] = 1
 
-if __name__ == '__main__':
+# Der Kernel muss nicht explizit zugänglich gemacht werden.
 
+if __name__ == '__main__':
+    # Zu testende Arraygrößen
     X = [32, 64, 128, 256, 512, 1024, 2048]
     Y = [1024, 2048, 4096, 8192, 16384]
+    # Anzahl Iterationen bzw. Durchführungen
     iterations = 20
-    numDurchf = 10
+    numDurchf = 100
+
+    # Iteration über die Arraygrößen
     for z in Y:
         Time = 0
         N = z
         print("Durchführung mit Arraygröße: " + str(N))
+        # Iteration über die Anzahl der Durchführungen
         for i in range(numDurchf):
             t_start = time()
             an_array = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
+            # Kopieren der Arrays zur GPU
             an_array_gpu = numba.cuda.to_device(an_array)
             array_gpu_out = numba.cuda.device_array_like(an_array_gpu)
-            block = (32, 32)
-            grid = (int(N / 32), int(N / 32))
+            # Iteration des Game of Life
             for i in range(iterations):
-                gameOfLife_ker[grid, block](array_gpu_out, an_array_gpu)
+                gameOfLife_ker[32, 32, int(N / 32), int(N / 32)](array_gpu_out, an_array_gpu)
+                # Kopieren der neuen Ergebnisse auf das originale Array
+                # So kann der Kernel einfach weiterbenutzt werden.
                 an_array_gpu[:] = array_gpu_out[:]
+            # Kopieren des Arrays zum Host
             an_array = an_array_gpu.copy_to_host()
             t_end = time()
             Time += t_end - t_start
-        print("end")
+        #Bildung des Durchschnitts
         print('Total time: %fs' % (Time / numDurchf))

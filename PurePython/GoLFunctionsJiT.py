@@ -1,15 +1,8 @@
 import numpy as np
 from numba import jit, prange
 
-"""
-fuer Parallelisierung koennte man hier @jit(Parallel=True) hinzuefuegen, das gaebe nicht nur keinen Speedup, es waere signifikant langsamer.
-0.42 -> 1.1 sec.
 
-# https://stackoverflow.com/questions/50658884/why-this-numba-code-is-6x-slower-than-numpy-code
-"""
-
-
-@jit(nopython=True, nogil=True, fastmath=True)
+@jit(nopython=True)
 def gameOfLifeJiT(grid):
     grid_out = np.empty_like(grid)
     N = grid.shape[0]

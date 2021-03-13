@@ -32,7 +32,7 @@ def gameOfLifeJoblib(grid):
     return grid_out
 
 
-@njit(parallel=True)
+@njit(parallel=True, nogil=True)
 def gameOfLifePara(grid):
     grid_out = np.empty_like(grid)
     N = grid.shape[0]

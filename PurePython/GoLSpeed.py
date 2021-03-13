@@ -1,7 +1,5 @@
-from time import time
 from timeit import Timer
 import numpy as np
-import sys
 from GoLFunctions import gameOfLife  , gameOfLifeNaiv
 from GoLFunctionsJiT import gameOfLifeJiT
 from GoLPara import gameOfLifePara
@@ -19,7 +17,7 @@ def gameOfLifeTimer(func, x , N):
 
 if __name__ == '__main__':
 
-    for i in Y[-1:]:
+    for i in X[:-1]:
 
         print("Durchführung mit Arraygröße: " + str(i))
         """
@@ -36,13 +34,13 @@ if __name__ == '__main__':
         print('Total time gameOfLife klassisch: %f' % (avgtime))
         """
         t = Timer(lambda: gameOfLifeTimer(gameOfLifeJiT, iterations, i))
-        avgtime = t.timeit(number=1)
+        avgtime = t.timeit(number=20)/20
 
         print("end")
-        print('Total time gameOfLife gameOfLifeJiT: %f' % (avgtime))
+        print('Total time gameOfLifeJiT: %f' % (avgtime))
 
         t = Timer(lambda: gameOfLifeTimer(gameOfLifePara, iterations, i))
-        avgtime = t.timeit(number=1)
+        avgtime = t.timeit(number=20)/20
 
         print("end")
         print('Total time JiT, parallel: %f' % (avgtime))

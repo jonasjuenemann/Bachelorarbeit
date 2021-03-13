@@ -3,7 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="05589b83-c342-4889-865d-ee68b47dc946" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython&amp;Python.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cython&amp;Python.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/GoL.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/GoL.cp38-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/GoL.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoL.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/GoLCython.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoLCython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cython/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GoLBenchmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoLBenchmarks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustCpp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustCpp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustNumba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustNumba.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JustPython.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustPython.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Numba&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLPara.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLPara.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLPlot.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLPlot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PurePython/GoLSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLSpeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyCUDA&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCUDA&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyCUDA&amp;numbaCUDA&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCUDA&amp;numbaCUDA&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyCuda&amp;numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCuda&amp;numba&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pybind&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Pybind&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pybind&amp;numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Pybind&amp;numba&amp;C++.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python&amp;Cpp20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;Cpp20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python&amp;Cython20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;Cython20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python&amp;numba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;numba.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbaCuda&amp;PyCuda&amp;C++&amp;numbaPython.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/numbaCuda&amp;PyCuda&amp;C++&amp;numbaPython.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,25 +56,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cuda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\Dateien für Abgabe\Cpp" />
+      <recent name="C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\NumbaCuda" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\PurePython" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\JonasJuenemann\Documents\GitHub\Bachelorarbeit\NumbaCuda" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.GoLBenchmarks">
+  <component name="RunManager" selected="Python.GoLPlot">
     <configuration name="GoLBenchmarks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -64,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GoLCython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GoLFunctionsJiT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,12 +102,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cython" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PurePython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cython/GoLCython.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NumbaGoLSimple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GoLTests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bachelorarbeit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,12 +168,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumbaCuda" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PurePython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PurePython/GoLTests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GoLBenchmarks" />
         <item itemvalue="Python.GoLPlot" />
-        <item itemvalue="Python.NumbaGoLSimple" />
+        <item itemvalue="Python.GoLTests" />
+        <item itemvalue="Python.GoLBenchmarks" />
         <item itemvalue="Python.GoLSpeed" />
-        <item itemvalue="Python.GoLCython" />
+        <item itemvalue="Python.GoLFunctionsJiT" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +278,16 @@
       <workItem from="1614219248554" duration="2367000" />
       <workItem from="1614307612709" duration="617000" />
       <workItem from="1614356708625" duration="2500000" />
+      <workItem from="1614894236320" duration="725000" />
+      <workItem from="1614896350883" duration="48000" />
+      <workItem from="1614946079958" duration="5452000" />
+      <workItem from="1615037409130" duration="5830000" />
+      <workItem from="1615073036217" duration="157000" />
+      <workItem from="1615078714983" duration="8000" />
+      <workItem from="1615125824691" duration="109000" />
+      <workItem from="1615127583096" duration="25243000" />
+      <workItem from="1615169685808" duration="1153000" />
+      <workItem from="1615227555147" duration="1969000" />
     </task>
     <servers />
   </component>
@@ -255,21 +295,38 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614356868776">
+    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615157746653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1613962487784" />
-    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614356868776" />
+    <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615157746653" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615167299426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1615078721031" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615167299426" />
     <state x="-1459" y="162" key="SettingsEditor" timestamp="1614142325005">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1614142325005" />
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613569837423" />
-    <state x="-1884" y="0" width="1893" height="674" maximized="true" key="dock-window-1" timestamp="1614147524510">
+    <state x="1076" y="-8" width="1357" height="717" maximized="true" key="dock-window-1" timestamp="1615155997360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="465" y="-8" width="1414" height="612" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1614965039180" />
+    <state x="1076" y="-8" width="1357" height="717" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615155997360" />
+    <state x="-1430" y="169" width="1357" height="717" key="dock-window-2" timestamp="1615158220606">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1884" y="0" width="1893" height="674" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1614147524510" />
-    <state x="-1471" y="0" width="1487" height="682" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613955253788" />
+    <state x="-1430" y="169" width="1357" height="717" key="dock-window-2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615158220606" />
+    <state x="-1687" y="0" width="1357" height="717" maximized="true" key="dock-window-3" timestamp="1615158220606">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1687" y="0" width="1357" height="717" maximized="true" key="dock-window-3/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615158220606" />
+    <state x="760" y="-10" width="1357" height="717" maximized="true" key="dock-window-4" timestamp="1615160986155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1819" y="0" width="1357" height="717" maximized="true" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1615160611375" />
+    <state x="760" y="-10" width="1357" height="717" maximized="true" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615160986155" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bachelorarbeit$GoLCython.coverage" NAME="GoLCython Coverage Results" MODIFIED="1603238226506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cython" />
