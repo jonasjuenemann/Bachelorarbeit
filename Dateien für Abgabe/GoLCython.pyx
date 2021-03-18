@@ -1,5 +1,4 @@
 import numpy as np
-cimport numpy as np
 
 """
 Der boundscheck von Cython schützt davor, zu versuchen auf Werte 

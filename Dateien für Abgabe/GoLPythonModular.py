@@ -1,5 +1,3 @@
-"""Klassisches Python"""
-
 import numpy as np
 
 """

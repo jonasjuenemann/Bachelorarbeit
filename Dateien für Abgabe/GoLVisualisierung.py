@@ -2,6 +2,7 @@ import matplotlib
 from matplotlib import animation
 import numpy as np
 from GoL import GoL as gameOfLife
+
 """Bei mir Nötig, um manuelle Kontrolle über die Animation zu erlauben
 Ist aber spezifisch, andere scheinen das nicht zu brauchen"""
 matplotlib.use("TkAgg")
@@ -24,10 +25,13 @@ Die Funktion führt dann das Game Of Life auf dem übergeben Array aus.
 Anschließend die Imshow auf das aktualisierte Array gesetzt.
 Die Imshow wird anschließend zurückgegeben
 """
+
+
 def update_grid(frameNum, img, grid_in):
     grid[:] = gameOfLife(grid_in)[:]
     img.set_data(grid)
     return img
+
 
 """
 Mit der update_grid Funktion kann eine Funktionsanimation vorgenommen werden.
@@ -38,6 +42,6 @@ Für die genauen Parameter kann ansonsten die matplotlib Dokumentation
 https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.animation.FuncAnimation.html
 konsultiert werden.
 """
-ani = animation.FuncAnimation(fig, update_grid, fargs=(img, grid, ), interval=25,
-                                frames=1000, save_count=1000)
+ani = animation.FuncAnimation(fig, update_grid, fargs=(img, grid,), interval=25,
+                              frames=1000, save_count=1000)
 plt.show()

@@ -14,7 +14,6 @@ plt.rc('xtick', labelsize=16)
 plt.rc('ytick', labelsize=16)
 plt.rc('lines', linewidth=3.0)
 
-
 Arraysizes = [32, 64, 128, 256, 512, 1024, 2048]
 
 """Ergebnisse für die Werkzeuge aus den Performance-Tests"""

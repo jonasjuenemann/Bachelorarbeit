@@ -4,6 +4,8 @@ from numba import cuda
 import numpy as np
 
 """Kernel zur Ausführung des GoL. Besitzt wie bei PyCUDA eine automatische Indizierung"""
+
+
 @cuda.jit
 def gameOfLife_ker(array_out, array_in):
     # Thread Indizes können komfortabel automatisch identifiziert werden.
@@ -21,6 +23,7 @@ def gameOfLife_ker(array_out, array_in):
             array_out[y][x] = 1
         if (array_in[y][x] == 1) and (z == 2):
             array_out[y][x] = 1
+
 
 # Der Kernel muss nicht explizit zugänglich gemacht werden.
 
@@ -54,5 +57,5 @@ if __name__ == '__main__':
             an_array = an_array_gpu.copy_to_host()
             t_end = time()
             Time += t_end - t_start
-        #Bildung des Durchschnitts
+        # Bildung des Durchschnitts
         print('Total time: %fs' % (Time / numDurchf))

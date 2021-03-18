@@ -1,6 +1,6 @@
 from timeit import Timer
 import numpy as np
-from GoL import gameOfLife
+from GoLPython import gameOfLife
 
 """Die Funktion nimmt eine Game of Life Funktion, einen Parameter für 
 die Iterationen und die geteste Größe des Arrays entgegen.
@@ -8,10 +8,13 @@ Dabei wird ein Ausgangszustand hergeleitet mit einem entsprechendem NumPy
 Kommando.
 Anschließend wird das Game of Life für die Anzahl der Iterationen durchgeführt.
 """
-def gameOfLifeTimer(func, i , N):
+
+
+def gameOfLifeTimer(func, i, N):
     grid = np.int32(np.random.choice([1, 0], N * N, p=[0.25, 0.75]).reshape(N, N))
     for i in range(i):
         grid = func(grid)
+
 
 """
 Für jede beliebige Game of Life Funktion kann die Dauer ermittelt werden.
@@ -36,6 +39,6 @@ if __name__ == '__main__':
 
     for i in X:
         t = Timer(lambda: gameOfLifeTimer(gameOfLife, iterations, i))
-        avgtime = t.timeit(number=anzahlDurchfuehrungen)/anzahlDurchfuehrungen
+        avgtime = t.timeit(number=anzahlDurchfuehrungen) / anzahlDurchfuehrungen
         print("Durchführung mit Arraygröße: " + str(i))
         print('Total time gameOfLife: %f' % (avgtime))

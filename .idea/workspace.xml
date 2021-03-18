@@ -3,33 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="05589b83-c342-4889-865d-ee68b47dc946" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython&amp;Python.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cython&amp;Python.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoL.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoL.cp38-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoL.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoL.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/GoLCython.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/GoLCython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/build/temp.win-amd64-3.8/Release/GoL.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cython/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cython/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoLBenchmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/GoLBenchmarks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustCpp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustCpp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustNumba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustNumba.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JustPython.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/JustPython.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Numba&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" beforeDir="false" afterPath="$PROJECT_DIR$/NumbaCuda/NumbaGoLSimple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLFunctionsJiT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLPara.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLPara.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLPlot.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLPlot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PurePython/GoLSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/PurePython/GoLSpeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyCUDA&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCUDA&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyCUDA&amp;numbaCUDA&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCUDA&amp;numbaCUDA&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyCuda&amp;numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PyCuda&amp;numba&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pybind&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Pybind&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pybind&amp;numba&amp;C++.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Pybind&amp;numba&amp;C++.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python&amp;Cpp20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;Cpp20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python&amp;Cython20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;Cython20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python&amp;numba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Python&amp;numba.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/numbaCuda&amp;PyCuda&amp;C++&amp;numbaPython.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/numbaCuda&amp;PyCuda&amp;C++&amp;numbaPython.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/Cpp/GoLCpp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/Cpp/GoLCpp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GPGPU/PyCUDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GPGPU/PyCUDA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GPGPU/numbaCUDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GPGPU/numbaCUDA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLCython.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLCython.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLGraphen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLGraphen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLPerformanceTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLPerformanceTests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonModular.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonModular.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonNumba.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonNumba.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLPythonTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/GoLVisualisierung.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/GoLVisualisierung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien für Abgabe/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien für Abgabe/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +198,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -288,11 +272,13 @@
       <workItem from="1615127583096" duration="25243000" />
       <workItem from="1615169685808" duration="1153000" />
       <workItem from="1615227555147" duration="1969000" />
+      <workItem from="1615821058505" duration="1591000" />
+      <workItem from="1615914302818" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="692" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615157746653">
@@ -304,11 +290,16 @@
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1615078721031" />
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615167299426" />
-    <state x="-1459" y="162" key="SettingsEditor" timestamp="1614142325005">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1615914320232">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1614142325005" />
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613569837423" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615914320232" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1615914303245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615914303245" />
     <state x="1076" y="-8" width="1357" height="717" maximized="true" key="dock-window-1" timestamp="1615155997360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -329,8 +320,8 @@
     <state x="760" y="-10" width="1357" height="717" maximized="true" key="dock-window-4/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615160986155" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Bachelorarbeit$GoLCython.coverage" NAME="GoLCython Coverage Results" MODIFIED="1603238226506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cython" />
-    <SUITE FILE_PATH="coverage/Bachelorarbeit$GoLSpeed.coverage" NAME="GoLSpeed Coverage Results" MODIFIED="1604017093401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PurePython" />
     <SUITE FILE_PATH="coverage/Bachelorarbeit$setup.coverage" NAME="setup Coverage Results" MODIFIED="1604272364056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cython" />
+    <SUITE FILE_PATH="coverage/Bachelorarbeit$GoLSpeed.coverage" NAME="GoLSpeed Coverage Results" MODIFIED="1604017093401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PurePython" />
+    <SUITE FILE_PATH="coverage/Bachelorarbeit$GoLCython.coverage" NAME="GoLCython Coverage Results" MODIFIED="1603238226506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cython" />
   </component>
 </project>

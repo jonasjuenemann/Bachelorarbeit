@@ -1,34 +1,41 @@
+import numpy as np
+from GoLPython import gameOfLife
+
+# Lösungen für N=10 (und np.seed(0))
+solutions = [[[0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+              [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
+              [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
+              [0, 0, 0, 1, 1, 0, 1, 1, 0, 0],
+              [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
+              [0, 0, 0, 0, 0, 1, 0, 1, 0, 1],
+              [0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+              [0, 1, 1, 1, 1, 0, 0, 1, 0, 1],
+              [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+              [0, 0, 0, 0, 0, 0, 1, 0, 1, 0]],
+             [[0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+              [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+              [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+              [0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
+              [0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
+              [0, 0, 1, 1, 1, 0, 1, 0, 1, 0],
+              [0, 1, 0, 0, 0, 0, 1, 0, 0, 1],
+              [1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+              [0, 0, 1, 1, 0, 0, 1, 1, 0, 0],
+              [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]]
+             ]
+
 """Dieser Funktion kann eine GoL Funktion als Parameter übergeben werden.
     Anschließend überprüft die Ergebnisse der übergebenen Funktion
     indem er sie zwei per hand erstellten Lösungen gegenüberstellt.
     Die Funktion gibt einen Boolean zurück, der True aussagt, wenn
     die Funktion korrekte Ergebnisse erstellt
  """
+
+
 def testIfGoLCorrect(func, solutions):
     correct = True
     N = 10
     iterations = [1, 2]
-    solutions = [[[0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
-                  [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
-                  [0, 0, 0, 1, 1, 0, 1, 1, 0, 0],
-                  [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 1, 0, 1, 0, 1],
-                  [0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
-                  [0, 1, 1, 1, 1, 0, 0, 1, 0, 1],
-                  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 1, 0, 1, 0]],
-                 [[0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-                  [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-                  [0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
-                  [0, 0, 0, 1, 0, 0, 0, 0, 1, 0],
-                  [0, 0, 1, 1, 1, 0, 1, 0, 1, 0],
-                  [0, 1, 0, 0, 0, 0, 1, 0, 0, 1],
-                  [1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
-                  [0, 0, 1, 1, 0, 0, 1, 1, 0, 0],
-                  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]]
-                 ]
 
     for x in range(len(iterations)):
         """
@@ -43,6 +50,6 @@ def testIfGoLCorrect(func, solutions):
 
     return correct
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     print(testIfGoLCorrect(gameOfLife, solutions))
